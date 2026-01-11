@@ -34,6 +34,10 @@ export const metadata: Metadata = {
   },
 };
 
+import { Analytics } from "@vercel/analytics/react";
+
+// ... (existing code)
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,7 +45,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>{children}</body>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

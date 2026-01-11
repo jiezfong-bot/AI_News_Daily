@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: "AI News Daily | AI 资讯日报",
   },
   description: "每日 AI 行业动态速览，聚合 Wired, Hacker News, DeepMind 等前沿科技资讯。",
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://ai-news-daily-rouge.vercel.app"),
   alternates: {
     canonical: "/",
   },

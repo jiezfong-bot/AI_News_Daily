@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: "*",
             allow: "/",
         },
-        sitemap: "http://localhost:3000/sitemap.xml",
+        sitemap: "https://ai-news-daily-rouge.vercel.app/sitemap.xml",
     };
 }
